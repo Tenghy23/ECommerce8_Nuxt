@@ -1,13 +1,9 @@
 import axios from "axios";
+import { ProductViewModel } from "../models/ProductViewModel.ts";
 
-const apiUrl = "https://your-api-url.com";
+const apiUrl = "https://localhost:5001/api/getAllProducts";
 
-axios
-  .get(apiUrl)
-  .then((response) => {
-    const data = response.data;
-    // Do something with the data
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+async function getProducts(): Promise<ProductViewModel[]> {
+  const response = await axios.get(apiUrl);
+  return response.data.map((item: any) => new ProductViewModel(item));
+}

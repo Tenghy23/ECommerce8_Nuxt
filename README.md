@@ -1,4 +1,4 @@
-Note: we can try run dev server
+Note: we can try run dev server\
 *pre-req: we are running node(version handled via nvm) + bun as pkg mgr, might need to install these dependencies if required
 
 Bun: [Installation | Bun Docs](https://bun.sh/docs/installation)

@@ -26,15 +26,26 @@ const { x, y } = getMousePosition()
       display: flex;
       flex-wrap: wrap;
       max-width: 66%;
-      margin-bottom: 20px;
-      margin-top: 20px;
+      gap: 1rem;
 }
 
 .filterPanelContainer {
       display: flex;
       flex-wrap: wrap;
       max-width: 33%;
-      margin-top: 20px;
+      min-width: 299px;
+}
+
+@media (max-width: 599px) {
+      .filterPanelContainer {
+            display: none;
+      }
+}
+
+@media (max-width: 419px) {
+      .productContainer {
+            display: none;
+      }
 }
 
 h1 {

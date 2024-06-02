@@ -15,7 +15,7 @@
 import cardComponent from '../components/cardComponent.vue'
 import headerComponent from '../components/headerComponent.vue'
 import filterPanelContainer from '../components/filterPanelComponent.vue'
-import { getMousePosition } from '../composables/mouseTracker.js'
+import { getMousePosition } from '../composables/mouseTracker.ts'
 
 const { x, y } = getMousePosition()
 // call api and load information

@@ -6,7 +6,7 @@ export function getMousePosition() {
   const y = ref(0);
 
   // a composable can update its managed state over time.
-  function update(event) {
+  function update(event: { pageX: number; pageY: number }) {
     x.value = event.pageX;
     y.value = event.pageY;
   }

@@ -5,6 +5,10 @@ Bun: [Installation | Bun Docs](https://bun.sh/docs/installation)
 NVM for Windows: [coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go. (github.com)](https://github.com/coreybutler/nvm-windows)
 NVM: https://github.com/creationix/nvm
 
+if you have nvm installed, run this to get lts version of node
+```
+ nvm install lts
+```
 install node modules
 ```
 bun i

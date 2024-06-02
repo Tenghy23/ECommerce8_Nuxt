@@ -1,5 +1,5 @@
 Note: we can try run dev server\
-*pre-req: we are running node(version handled via nvm) + bun as pkg mgr, might need to install these dependencies if required
+*pre-req: we are running node v20.14.0(version handled via nvm 1.1.12) + bun 1.1.12 as pkg mgr, might need to install these dependencies if required
 
 Bun: [Installation | Bun Docs](https://bun.sh/docs/installation)
 NVM for Windows: [coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go. (github.com)](https://github.com/coreybutler/nvm-windows)

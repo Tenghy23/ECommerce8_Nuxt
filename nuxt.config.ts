@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
@@ -13,7 +14,6 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
-    //...
   ],
   vite: {
     vue: {
@@ -22,4 +22,5 @@ export default defineNuxtConfig({
       },
     },
   },
+  plugins: ["~/plugins/pinia"],
 });
